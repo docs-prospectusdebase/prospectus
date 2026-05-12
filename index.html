@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prospectus & Documents</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f0f2f5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    header {
+      background: #00008f;
+      border-radius: 12px 12px 0 0;
+      padding: 2rem 2rem 1.5rem;
+      text-align: center;
+    }
+
+    .logo-axa {
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      color: #ffffff;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    header p {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.9rem;
+    }
+
+    .liens-liste {
+      background: #ffffff;
+      border-radius: 0 0 12px 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    .lien-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.2rem 1.5rem;
+      border-bottom: 1px solid #f0f2f5;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.15s;
+    }
+
+    .lien-item:last-child {
+      border-bottom: none;
+    }
+
+    .lien-item:hover {
+      background: #f7f8ff;
+    }
+
+    .lien-icone {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: #00008f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+
+    .lien-texte {
+      flex: 1;
+    }
+
+    .lien-nom {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #1a1a2e;
+      margin-bottom: 0.2rem;
+    }
+
+    .lien-url {
+      font-size: 0.78rem;
+      color: #888;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 380px;
+    }
+
+    .lien-fleche {
+      color: #00008f;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    footer {
+      margin-top: 1.5rem;
+      text-align: center;
+      font-size: 0.78rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-axa">
+        <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" width="80" height="27">
+          <text x="0" y="32" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="36" fill="#ffffff" letter-spacing="2">AXA</text>
+        </svg>
+      </div>
+      <h1>Prospectus de base</h1>
+    </header>
+
+    <div class="liens-liste">
+
+      <a class="lien-item" href="https://home.barclays/investor-relations/fixed-income-investors/prospectus-and-documents/structured-securities-prospectuses/" target="_blank" rel="noopener noreferrer">
+        <div class="lien-texte">
+          <div class="lien-nom">Barclays</div>
+          <div class="lien-url">home.barclays/investor-relations/…</div>
+        </div>
+        <div class="lien-fleche">→</div>
+      </a>
+
+      <a class="lien-item" href="https://www.documentation.ca-cib.com/IssuanceProgram" target="_blank" rel="noopener noreferrer">
+        <div class="lien-texte">
+          <div class="lien-nom">Crédit Agricole</div>
+          <div class="lien-url">documentation.ca-cib.com/IssuanceProgram</div>
+        </div>
+        <div class="lien-fleche">→</div>
+      </a>
+
+      <a class="lien-item" href="https://www.luxse.com/pdf-viewer/105122796" target="_blank" rel="noopener noreferrer">
+        <div class="lien-texte">
+          <div class="lien-nom">Goldman Sachs</div>
+          <div class="lien-url">luxse.com/pdf-viewer/105122796</div>
+        </div>
+        <div class="lien-fleche">→</div>
+      </a>
+
+      <a class="lien-item" href="https://sp.morganstanley.com/fr/prospectus/" target="_blank" rel="noopener noreferrer">
+        <div class="lien-texte">
+          <div class="lien-nom">Morgan Stanley</div>
+          <div class="lien-url">sp.morganstanley.com/fr/prospectus/</div>
+        </div>
+        <div class="lien-fleche">→</div>
+      </a>
+
+      <a class="lien-item" href="http://prospectus.socgen.com" target="_blank" rel="noopener noreferrer">
+        <div class="lien-texte">
+          <div class="lien-nom">Société Générale</div>
+          <div class="lien-url">prospectus.socgen.com</div>
+        </div>
+        <div class="lien-fleche">→</div>
+      </a>
+
+    </div>
+
+    <footer>
+      AXA — Génération d'Avenants de Souscription
+    </footer>
+  </div>
+</body>
+</html>
